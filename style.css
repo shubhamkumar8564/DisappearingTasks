@@ -1,0 +1,11 @@
+img{
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+
+li{
+ list-style: none;
+ display: inline;
+ height: 200px;
+}
