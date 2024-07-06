@@ -9,3 +9,17 @@ li{
  display: inline;
  height: 200px;
 }
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto; /* Adjust height proportionally */
+        padding: 0; /* Optional: Adjust padding for better fit */
+        margin: 0; /* Optional: Adjust margin for better fit */
+    }
+
+    li {
+        display: block;
+        width: 100%;
+    }
+}
