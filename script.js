@@ -4,6 +4,13 @@ console.log()
 const randomNum = Math.floor(Math.random() *5 ) +1
 // console.log(randomNum)
 
+// const reset = document.getElementById("reset")
+// // reset.reload();
+// // reset.addEventListener('click', function (e) {
+
+    
+// // })
+
 function searchTask(){
 
 
