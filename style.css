@@ -11,10 +11,6 @@ li{
 }
 
 
-.heading h1{
-    font-size: 3em;
-    margin-bottom: 15px;
-}
 
 
 button {
@@ -58,4 +54,6 @@ button:hover {
 .image-container img:hover {
     transform: scale(1.1);
 }
+
+
 
