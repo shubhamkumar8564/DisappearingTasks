@@ -10,16 +10,52 @@ li{
  height: 200px;
 }
 
-/* @media (max-width: 600px) {
-    img {
-        width: 100%;
-        height: auto; /* Adjust height proportionally */
-        padding: 5px;
-        margin-bottom: 15px;
-    }
 
-    li {
-        display: block;
-        width: 100%;
-    }
-} */
+.heading h1{
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+
+button {
+    background-color: #fafafa;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #8f821f;
+    color: white;
+}
+
+.task {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.task_list {
+    font-weight: bold;
+}
+
+
+
+.image-container li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.image-container img {
+    
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
