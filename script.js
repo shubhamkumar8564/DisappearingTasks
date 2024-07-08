@@ -1,19 +1,21 @@
 const task = document.querySelector('span')
-console.log()
 
-const randomNum = Math.floor(Math.random() *5 ) +1
-// console.log(randomNum)
 
-// const reset = document.getElementById("reset")
-// // reset.reload();
-// // reset.addEventListener('click', function (e) {
+let randomNum;
 
-    
-// // })
+
+
+
+const errorAudio = document.getElementById("errorAudio");
+const correctAudio = document.getElementById("correctAudio");
+
+
 
 function searchTask(){
 
-
+  randomNum = Math.floor(Math.random() *5 ) +1;
+console.log(randomNum)
+ 
     
     switch (randomNum) {
         case 1:
@@ -61,6 +63,8 @@ function searchTask(){
             document.getElementById("search").onclick = function(){
     // console.log("click on button")
     searchTask();
+imageDisapear(randomNum);
+
     
  }
 
@@ -73,6 +77,10 @@ function searchTask(){
             if(e.target.tagName === "IMG"){
                 let removeIt = e.target.parentNode
                 removeIt.remove()
+                correctAudio.play();
+            } else {
+                 errorAudio.play();
+                 console.log("Playing error sound");
             }
          
          
@@ -86,6 +94,13 @@ function searchTask(){
         if(e.target.tagName === "IMG"){
             let removeIt = e.target.parentNode
             removeIt.remove()
+            correctAudio.play();
+
+        }
+        else {
+
+            errorAudio.play();
+            console.log("Playing error sound");
         }
 
 
@@ -97,6 +112,10 @@ function searchTask(){
         if(e.target.tagName === "IMG"){
             let removeIt = e.target.parentNode
             removeIt.remove()
+            correctAudio.play();
+
+        } else{
+            console.log("Playing error sound"); 
         }
 
     })
@@ -108,7 +127,13 @@ function searchTask(){
         if(e.target.tagName === "IMG"){
             let removeIt = e.target.parentNode
             removeIt.remove()
+            correctAudio.play();
+
+        } else {
+            console.log("Playing error sound");
         }
+
+       
 
     })
 }else{
@@ -117,6 +142,8 @@ function searchTask(){
         // console.log('water'); if(e.target.tagName === "IMG"){
                 let removeIt = e.target.parentNode
                 removeIt.remove()
+            correctAudio.play();
+
             
 
     })
@@ -124,4 +151,5 @@ function searchTask(){
 }
 }
 
-imageDisapear(randomNum);
+// imageDisapear(randomNum);
+
